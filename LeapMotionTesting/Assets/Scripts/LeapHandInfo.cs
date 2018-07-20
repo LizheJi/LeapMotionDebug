@@ -7,7 +7,6 @@ using Leap;
 
 public class LeapHandInfo : MonoBehaviour
 {
-
     [SerializeField]
     private GameObject _leftHandObject;
     [SerializeField]
@@ -22,6 +21,9 @@ public class LeapHandInfo : MonoBehaviour
     [SerializeField]
     private List<Transform> _rightFingerLabel;
 
+    [Header("Press Threshold:")]
+    [SerializeField]
+    private HandPairPressThreshold _thresholds;
 
     private HandModelBase _leftHand;
     private HandModelBase _rightHand;
